@@ -52,7 +52,7 @@ const css = `
 export default function FlirtyApp() {
   const [screen,    setScreen]    = useState("app");
   const [tab,       setTab]       = useState("discover");
-  const [cards,     setCards]     = useState([...profiles].sort((a,b) => (subscribed.includes(b.name)?1:0)-(subscribed.includes(a.name)?1:0)));
+  const [cards, setCards] = useState([...profiles]);
   const [dragX,     setDragX]     = useState(0);
   const [dragging,  setDragging]  = useState(false);
   const [swipeDir,  setSwipeDir]  = useState(null);
