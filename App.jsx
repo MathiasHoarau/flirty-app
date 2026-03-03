@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import logo from './flirty-logo.svg';
+
 const g = {
   black:"#0A0805", dark:"#111009", card:"#1A1710",
   border:"#2A2518", gold:"#D4A84B", goldDim:"#8A6A20",
@@ -163,7 +163,18 @@ export default function FlirtyApp() {
       {screen === "auth" && (
         <div style={{ minHeight:"100vh", display:"flex", flexDirection:"column", background:`radial-gradient(ellipse at 50% 20%,#1A120A,${g.black} 65%)` }}>
           <div style={{ padding:"44px 28px 0", textAlign:"center" }} className="fu">
-           <img src={logo} alt="Flirty" style={{ width:'200px', margin:'0 auto 8px' }} />
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" style={{width:'220px',margin:'0 auto',display:'block'}}>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#C9A84C"/>
+      <stop offset="50%" stopColor="#F5D78E"/>
+      <stop offset="100%" stopColor="#A8801E"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" fill="#0A0A0A" rx="4"/>
+  <rect x="6" y="6" width="388" height="148" fill="none" stroke="#D4A843" strokeWidth="0.8" rx="2"/>
+  <text x="200" y="100" fontFamily="Georgia,serif" fontSize="68" fontWeight="400" letterSpacing="16" textAnchor="middle" fill="url(#g1)" fontStyle="italic">FLIRTY</text>
+</svg>
            
           </div>
           <div style={{ display:"flex", margin:"28px 24px 0", background:g.dim, borderRadius:14, padding:4 }}>
